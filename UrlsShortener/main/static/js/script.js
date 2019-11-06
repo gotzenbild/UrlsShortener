@@ -168,7 +168,7 @@ $(document).ready(function(){
 	setTimeout( function(){
 		if($("#site-type").length) {
         $(".typewrite span").typed({
-            strings: ["From -> <a>https://long/D%3D%2D%...</a>", "To -> <a>https://short</a>"],
+            strings: ["From -> <a>https://long/D%3D%2D%...</a>", "To -> <a>https://short/</a>"],
             typeSpeed: 100,
             backDelay: 500,
             loop: false,

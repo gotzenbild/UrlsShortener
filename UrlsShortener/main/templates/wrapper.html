@@ -95,17 +95,17 @@
 
 <div id="ajax-sidebar" >
 
-  <div class="home-sidebar" style="background-image:url('img/home-sidebar.jpg')" id="hero">
+  <div class="home-sidebar" style="background-image:url('{% static '/img/home-sidebar.jpg' %}')" id="hero">
 
     <div class="parallax-option" data-jkit="[parallax:strength=0.8;axis=both]">
 
-      <div class="parallax parallax1"><img src="img/business-card-2.png"></div>
+      <div class="parallax parallax1"><img src="{% static '/img/business-card-2.png' %}"></div>
 
     </div>
 
     <div class="parallax-option" data-jkit="[parallax:strength=0.3;axis=both]">
 
-      <div class="parallax parallax1"><img src="img/business-card.png"></div>
+      <div class="parallax parallax1"><img src="{% static '/img/business-card.png' %}"></div>
 
     </div>
 
@@ -117,20 +117,23 @@
   <!--Footer-->
 
 
+
+
+
 <!--Scripts-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script href="{% static '/js/jquery.min.js' %}" ></script>
-	<script href="{% static '/js/jquery.easing.min.js' %}" ></script>
-	<script href="{% static '/js/modernizr.custom.42534.js' %}" type="text/javascript"></script>
-  <script href="{% static '/js/jquery.waitforimages.js' %}" type="text/javascript"></script>
-  <script href="{% static '/js/typed.js' %}" type="text/javascript"></script>
-  <script href="{% static '/js/masonry.pkgd.min.js' %}" type="text/javascript"></script>
-  <script href="{% static '/js/imagesloaded.pkgd.min.js' %}" type="text/javascript"></script>
-  <script href="{% static '/js/jquery.jkit.1.2.16.min.js' %}" ></script>
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+	<script src="{% static 'js/jquery.easing.min.js' %}"></script>
+	<script src="{% static 'js/modernizr.custom.42534.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/jquery.waitforimages.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/typed.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/masonry.pkgd.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/imagesloaded.pkgd.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/jquery.jkit.1.2.16.min.js' %}"></script>
 
-  <script href="{% static '/js/script.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/script.js' %}" type="text/javascript"></script>
 
 	<script>
     $('#button, #buttons').on('click', function() {

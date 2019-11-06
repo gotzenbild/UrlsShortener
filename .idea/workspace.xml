@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecd50e60-4091-4dbc-a37b-758cb27a9030" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/UrlsShortener/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UrlsShortener/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UrlsShortener/UrlsShortener/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrlsShortener/UrlsShortener/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UrlsShortener/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/UrlsShortener/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UrlsShortener/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrlsShortener/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UrlsShortener/main/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/UrlsShortener/main/static/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UrlsShortener/main/templates/wrapper.html" beforeDir="false" afterPath="$PROJECT_DIR$/UrlsShortener/main/templates/wrapper.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UrlsShortener/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrlsShortener/main/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UrlsShortener/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrlsShortener/main/views.py" afterDir="false" />
     </list>
@@ -22,26 +27,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="2" />
-          <entry key="js" value="12" />
+          <entry key="html" value="8" />
+          <entry key="js" value="35" />
+          <entry key="py" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="2" />
-          <entry key="JavaScript" value="12" />
+          <entry key="HTML" value="8" />
+          <entry key="JavaScript" value="35" />
+          <entry key="Python" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="34" />
-          <entry key="py" value="10" />
+          <entry key="html" value="57" />
+          <entry key="js" value="2" />
+          <entry key="py" value="114" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="34" />
-          <entry key="Python" value="10" />
+          <entry key="HTML" value="57" />
+          <entry key="JavaScript" value="2" />
+          <entry key="Python" value="114" />
         </counts>
       </usages-collector>
     </session>
@@ -49,15 +58,31 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UrlsShortener/UrlsShortener/urls.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/UrlsShortener/main/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/UrlsShortener/main/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+              <folding>
+                <marker date="1573074731768" expanded="true" signature="85:90" ph="..." />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UrlsShortener/main/templates/wrapper.html">
+        <entry file="file://$PROJECT_DIR$/UrlsShortener/UrlsShortener/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1920">
-              <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
+            <state relative-caret-position="560">
+              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -65,7 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UrlsShortener/main/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="180">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -73,11 +99,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/UrlsShortener/main/views.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UrlsShortener/main/templates/wrapper.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+            <state relative-caret-position="220">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,9 +116,19 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>preloader</find>
-      <find>business-card</find>
       <find>ajax-sidebar</find>
+      <find>/img/business-card.png</find>
+      <find>&lt;div class=&quot;parallax parallax1&quot;&gt;&lt;img src=&quot;img/business-card-2.png&quot;&gt;&lt;/div&gt;</find>
+      <find>&lt;div class=&quot;parallax parallax1&quot;&gt;&lt;img src=&quot;img/business-card.png&quot;&gt;&lt;/div&gt;</find>
+      <find>home-sidebar</find>
+      <find>home-sidebar.jpg</find>
+      <find>https://yastatic.net/s3/trbro/v19.6.1.0/js/tr_page_bundle.js</find>
+      <find>fadeIn</find>
+      <find>hidePreloader</find>
+      <find>showPreloader</find>
+      <find>business-card</find>
+      <find>script</find>
+      <find>preloader</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -97,8 +137,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/UrlsShortener/main/templates/index.html" />
+        <option value="$PROJECT_DIR$/UrlsShortener/UrlsShortener/settings.py" />
+        <option value="$USER_HOME$/Desktop/DOWNLOAD/HTML/index.html" />
         <option value="$PROJECT_DIR$/UrlsShortener/main/templates/wrapper.html" />
+        <option value="$PROJECT_DIR$/UrlsShortener/main/static/js/script.js" />
+        <option value="$PROJECT_DIR$/UrlsShortener/main/urls.py" />
         <option value="$PROJECT_DIR$/UrlsShortener/main/views.py" />
+        <option value="$PROJECT_DIR$/UrlsShortener/main/models.py" />
       </list>
     </option>
   </component>
@@ -130,6 +176,13 @@
               <item name="UrlsShortener" type="462c0819:PsiDirectoryNode" />
               <item name="UrlsShortener" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UrlsShortener" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UrlsShortener" type="462c0819:PsiDirectoryNode" />
+              <item name="UrlsShortener" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UrlsShortener" type="b2602c69:ProjectViewProjectNode" />
@@ -212,69 +265,104 @@
     </entry>
     <entry file="file://C:/PythonAll/projects/shop/shop/main/templates/wrapper.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3973">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="4" selection-end-column="26" />
+        <state relative-caret-position="80">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UrlsShortener/main/static/js/script.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UrlsShortener/main/static/js/typed.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7273" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UrlsShortener/main/static/js/imagesloaded.pkgd.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UrlsShortener/main/static/js/jquery.easing.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-29" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UrlsShortener/main/static/js/jquery.jkit.1.2.16.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UrlsShortener/main/static/js/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UrlsShortener/main/static/js/jquery.waitforimages.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-29" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UrlsShortener/main/static/js/jquery-ui-1.10.4.min.js">
+    <entry file="file://$PROJECT_DIR$/UrlsShortener/main/static/js/modernizr.custom.42534.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/UrlsShortener/main/static/js/masonry.pkgd.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/UrlsShortener/main/static/js/modernizr.custom.42534.js">
+    <entry file="file://$PROJECT_DIR$/UrlsShortener/main/static/js/jquery-ui-1.10.4.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UrlsShortener/main/static/js/jquery.waitforimages.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UrlsShortener/main/static/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UrlsShortener/main/static/js/jquery.jkit.1.2.16.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UrlsShortener/main/static/js/jquery.easing.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UrlsShortener/main/static/js/imagesloaded.pkgd.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UrlsShortener/main/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16013" />
+        <state relative-caret-position="220">
+          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UrlsShortener/main/static/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="170" column="89" selection-start-line="170" selection-start-column="89" selection-end-line="170" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/DOWNLOAD/HTML/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="118" selection-start-line="118" selection-end-line="138" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UrlsShortener/main/static/js/typed.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/UrlsShortener/main/templates/wrapper.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1920">
-          <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
+        <state relative-caret-position="220">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UrlsShortener/main/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="180">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/UrlsShortener/UrlsShortener/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/UrlsShortener/main/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UrlsShortener/main/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding>
+            <marker date="1573074731768" expanded="true" signature="85:90" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
