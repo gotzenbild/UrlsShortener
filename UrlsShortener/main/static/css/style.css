@@ -376,12 +376,12 @@ CONTENT
 }
 
 .content .text-intro h1{
-  font-size:30px;
+  font-size:20px;
   width:50%;
   text-transform:uppercase;
   color:#000000;
   font-weight:400;
-  line-height:70px;
+  line-height:40px;
 }
 
 .content .text-intro p{
@@ -395,7 +395,7 @@ CONTENT
 }
 .content .form-intro {
  width:40%;
- margin-top: 50px;
+ margin-top: 30px;
 }
 
         .typed-cursor{
@@ -704,3 +704,8 @@ textarea{
 }
 
 textarea:focus{background:#f4f4f4; height:250px;}
+
+
+.default-hide{
+    display: none;
+}

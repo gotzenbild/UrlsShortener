@@ -26,7 +26,7 @@ with open('C:\GITHUB\\UrlsSVirt\SECRET_KEY.txt') as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["77.47.198.74", "localhost"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
