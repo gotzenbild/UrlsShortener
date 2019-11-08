@@ -4,10 +4,14 @@ from django.urls import path, include
 from main.views import (main_view,
                         short_url_view,
                         redirect_view,
+                        UrlsApi,
                         )
 
 urlpatterns = [
     path('', main_view, name='main'),
-    path('short_url', short_url_view, name='short_url'),
+    path('shortUrl', short_url_view, name='short_url'),
     path('<short_url_key>', redirect_view, name='redirect'),
+
+    path('api/', UrlsApi.as_view()),
+    path('api/<str:key>', UrlsApi.as_view()),
     ]

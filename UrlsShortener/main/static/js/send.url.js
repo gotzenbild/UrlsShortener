@@ -1,3 +1,6 @@
+/*-------------------------------------------
+Ajax sending data and data display
+---------------------------------------------*/
 $('#send_url').on('click', function(e){
     e.preventDefault();
     long_url = $('#long_url').val()
@@ -9,7 +12,7 @@ $('#send_url').on('click', function(e){
         }
         $.ajax({
             type : "GET",
-            url : '/short_url' ,
+            url : '/shortUrl' ,
             data : data,
             success : function(data){
                 if (data.req.code == "200"){
@@ -43,4 +46,8 @@ $('#send_url').on('click', function(e){
         $('#label-text').show("slow")
     }
 
+})
+
+$("#form").on("submit", function(){
+  $('#send_url').click()
 })

@@ -1,7 +1,9 @@
 from django.db import models
-from django.core.validators import MaxValueValidator, MinValueValidator
+from django.core.validators import MaxValueValidator, MinValueValidator, URLValidator
 from random import choice
 import string
+
+from rest_framework.exceptions import ValidationError
 
 
 def generate_key():
@@ -10,7 +12,6 @@ def generate_key():
 
 
 class Urls (models.Model):
-
     long_url = models.URLField(blank=True)
     short_url_key = models.CharField(max_length=6, primary_key=True, default=generate_key)
     reg_date = models.DateTimeField(auto_now=True)

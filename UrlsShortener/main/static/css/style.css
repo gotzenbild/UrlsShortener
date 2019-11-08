@@ -364,7 +364,7 @@ CONTENT
 
 .content{
   position:relative;
-  width:1140px;
+  width:100%;
   margin:50px auto;
 }
 
@@ -439,7 +439,7 @@ HOME SIDEBAR
 **************************
 */
 
-.home-sidebar{
+.home-sidebar-right{
   top:0;
   position:absolute;
   width:33.3333%;

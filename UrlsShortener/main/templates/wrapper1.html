@@ -30,8 +30,6 @@
     </div>
 </div>
 
-
-
 <!--Header-->
 
 <header id="fullscreen">
@@ -43,12 +41,8 @@
 </header>
 
 
-<div class="container">
-
 <!--Content-->
-<div class="col-ms-12">
-  <div class="content" id="ajax-content">
-
+<div class="content" id="ajax-content">
 
   <div class="text-intro" id="site-type">
 
@@ -61,7 +55,7 @@
       <h1><a href="URL" id="short-url"></a></h1>
     </div>
 
-    <form class="form-intro" id="form">
+    <form class="form-intro">
       <div class="form-group">
         <label for="long_url_feedback" class="width-100">Your link<a id="clean-url" class="to-right"><i class="fa fa-trash" ></i>clean</a></label>
         <input type="text" class="form-control" id="long_url" placeholder="More than 20 characters">
@@ -79,34 +73,36 @@
           {% endfor %}
         </select>
       </div>
-      <input type="submit" id="send_url" class="btn btn-primary" value="Get shortened link">
+      <input type="button" id="send_url" class="btn btn-primary" value="Get shortened link">
     </form>
 
-</div>
-</div>
   </div>
+</div>
+
   <!--Home Sidebar-->
-  <div class="col-sm-0">
-<div id="ajax-sidebar" >
 
-  <div class="home-sidebar-right" style="background-image:url('{% static '/img/home-sidebar.jpg' %}')" id="hero">
+<!--<div id="ajax-sidebar" >-->
 
-    <div class="parallax-option" data-jkit="[parallax:strength=0.8;axis=both]">
+  <!--<div class="home-sidebar-right" style="background-image:url('{% static '/img/home-sidebar.jpg' %}')" id="hero">-->
 
-      <div class="parallax parallax1"><img src="{% static '/img/business-card-2.png' %}"></div>
+    <!--<div class="parallax-option" data-jkit="[parallax:strength=0.8;axis=both]">-->
 
-    </div>
+      <!--<div class="parallax parallax1"><img src="{% static '/img/business-card-2.png' %}"></div>-->
 
-    <div class="parallax-option" data-jkit="[parallax:strength=0.3;axis=both]">
+    <!--</div>-->
 
-      <div class="parallax parallax1"><img src="{% static '/img/business-card.png' %}"></div>
+    <!--<div class="parallax-option" data-jkit="[parallax:strength=0.3;axis=both]">-->
 
-    </div>
+      <!--<div class="parallax parallax1"><img src="{% static '/img/business-card.png' %}"></div>-->
 
-  </div>
+    <!--</div>-->
 
-</div></div>
-</div>
+  <!--</div>-->
+
+
+<!--</div>-->
+
+
 
 
 
