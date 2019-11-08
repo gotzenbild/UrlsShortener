@@ -8,24 +8,21 @@
   <title>UrlsShotener</title>
   <link rel="icon" type="image/png" href="{% static '/img/icon.png' %}"/>
 
-<!--Style-->
-
+  <!--Style-->
   <link rel="stylesheet" href="{% static '/css/reset.css' %}">
   <link rel="stylesheet" href="{% static '/css/style.css' %}">
   <link rel="stylesheet" href="{% static '/css/style-responsive.css' %}">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!--[if lt IE 9]>
+  <link rel="stylesheet" href="{% static '/css/font-awesome.min.css' %}">
+
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
 
 </head>
 
 <body>
 
 <!--Preloader-->
-
-
 <div class="preloader" id="preloader">
     <div class="item">
       <div class="spinner">
@@ -33,74 +30,56 @@
     </div>
 </div>
 
-<div class="opacity-nav">
+<!--Header-->
 
-        <div class="menu-index" id="buttons" style="z-index:999999">
-        <i class="fa  fa-close"></i>
-        </div>
-
-</div>
-
-
-  <!--Header-->
-  <header id="fullscreen">
-
-      <div class="logo" id="full"><a class="ajax-link" href="index.html">UrlsShotener</a></div>
+<header id="fullscreen">
+<nav class="navbar ">
+  <div class="logo" id="full">
+    <a class="ajax-link" href="index.html">UrlsShotener</a>
+  </div>
+</nav>
+</header>
 
 
-  </header>
+<!--Content-->
+<div class="content" id="ajax-content">
 
-  <div class="clear"></div>
+  <div class="text-intro" id="site-type">
 
-  <!--Content-->
+    <div id="label-text">
+      <h1>Change your link</h1>
+      <h1 class="typewrite"><span>|</span></h1> <!--Change on script.js-->
+    </div>
+    <div id="short-url-text" class="default-hide short-url-text">
+      <h1>Your short url here:</h1>
+      <h1><a href="URL" id="short-url"></a></h1>
+    </div>
 
-  <div class="content" id="ajax-content">
-
-
-        <div class="text-intro" id="site-type">
-
-          <div id="label-text">
-            <h1>Change your link</h1>
-            <h1 class="typewrite"><span>|</span></h1> <!--Change on script.js-->
-          </div>
-          <div id="short-url-text" class="default-hide short-url-text">
-            <h1>Your short url here:</h1>
-            <h1><a href="URL" id="short-url"></a></h1>
-          </div>
-
-
-            <form class="form-intro">
-              <div class="form-group">
-                <label for="long_url">Your link</label>
-                <input type="text" class="form-control" id="long_url" placeholder="https://long/D%3D%2D%D%3D%2D%D%3D%2D%D%3D%2D%">
-                <div class="invalid-feedback" id="long_url_feedback"></div>
-              </div>
-              <div class="form-group">
-                <label for="life_span">Link life days</label>
-                <select class="form-control" id="life_span">
-                  <option selected="selected">1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-              <a  id="send_url" class="btn btn-primary">Get shortened link</a>
-            </form>
-
-
-          <p>Shorten your link quickly'{% url 'short_url' %}'</p>
-
-        </div>
-
-
-
-
+    <form class="form-intro">
+      <div class="form-group">
+        <label for="long_url_feedback" class="width-100">Your link<a id="clean-url" class="to-right"><i class="fa fa-trash" ></i>clean</a></label>
+        <input type="text" class="form-control" id="long_url" placeholder="More than 20 characters">
+        <div class="invalid-feedback" id="long_url_feedback"></div>
+      </div>
+      <div class="form-group">
+        <label for="life_span">Link life days ( from 1 to 365 ) </label>
+        <select class="form-control" id="life_span" onmousedown="if(this.options.length>4){this.size=4;}"  onchange='this.size=0;' onblur="this.size=0;">
+          {% for i in ranges %}
+          {% if 90 == i %}
+            <option selected>{{i}}</option>
+          {% else %}
+            <option>{{i}}</option>
+          {% endif %}
+          {% endfor %}
+        </select>
+      </div>
+      <input type="button" id="send_url" class="btn btn-primary" value="Get shortened link">
+    </form>
 
   </div>
 
-  <!--Home Sidebar-->
 
+  <!--Home Sidebar-->
 <div id="ajax-sidebar" >
 
   <div class="home-sidebar" style="background-image:url('{% static '/img/home-sidebar.jpg' %}')" id="hero">
@@ -120,9 +99,9 @@
   </div>
 
 </div>
+</div>
 
-
-  <!--Footer-->
+  Footer
 
 
 
@@ -147,8 +126,13 @@ $('#button, #buttons').on('click', function() {
 $( ".opacity-nav" ).fadeToggle( "slow", "linear" );
 // Animation complete.
 });
-</script>
 
+</script>
+<script>
+  $('#clean-url').on('click', function(){
+  $('#long_url').val('')
+});
+</script>
 
 </body>
 </html>

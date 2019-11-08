@@ -709,3 +709,11 @@ textarea:focus{background:#f4f4f4; height:250px;}
 .default-hide{
     display: none;
 }
+
+.to-right{
+    margin-left:73%;
+    text-align: right;
+}
+.width-100{
+    width: 100%;
+}
