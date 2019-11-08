@@ -59,19 +59,6 @@ Ajax link page transitions
 	});
 
 
-/*-------------------------------------------
-When you click back arrow
----------------------------------------------*/
-
-
-function backLoading() {
-    $(window).on("popstate", function () {
-        $('body').fadeOut('slow',function(){
-            location.reload();
-        });
-        $('body').fadeIn();
-    });
-}
 
 /*-------------------------------------------
 Load Page - next Open Site

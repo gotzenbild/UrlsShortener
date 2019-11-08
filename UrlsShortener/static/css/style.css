@@ -364,7 +364,7 @@ CONTENT
 
 .content{
   position:relative;
-  width:1140px;
+  width:100%;
   margin:50px auto;
 }
 
@@ -439,7 +439,7 @@ HOME SIDEBAR
 **************************
 */
 
-.home-sidebar{
+.home-sidebar-right{
   top:0;
   position:absolute;
   width:33.3333%;
@@ -708,4 +708,12 @@ textarea:focus{background:#f4f4f4; height:250px;}
 
 .default-hide{
     display: none;
+}
+
+.to-right{
+    margin-left:73%;
+    text-align: right;
+}
+.width-100{
+    width: 100%;
 }
