@@ -13,34 +13,34 @@ from rest_framework.views import APIView
 from .serializers import UrlsSerializer
 
 # Removing obsolete links, circus in 10 minutes
-# def time_check():
-#     date_format = "%d/%m/%Y %H:%M"
-#     while True:
-#         objs = Urls.objects.all()
-#         now = datetime.strptime('{0}/{1}/{2} {3}:{4}'.format(datetime.now().day,
-#                                                      datetime.now().month,
-#                                                      datetime.now().year,
-#                                                      datetime.now().hour,
-#                                                      datetime.now().month),
-#                                 date_format)
-#         for obj in objs:
-#             set = datetime.strptime('{0}/{1}/{2} {3}:{4}'.format(obj.reg_date.day,
-#                                                          obj.reg_date.month,
-#                                                          obj.reg_date.year,
-#                                                          obj.reg_date.hour,
-#                                                          obj.reg_date.month),
-#                                   date_format)
-#
-#             if (now - set).days - obj.life_span == 0:
-#                 obj.delete()
-#         t.sleep(600)
-#
-#
-# tChThr = threading.Thread(target=time_check, name='tchThr')
-# tChThr.start()
+def time_check():
+    date_format = "%d/%m/%Y %H:%M"
+    while True:
+        objs = Urls.objects.all()
+        now = datetime.strptime('{0}/{1}/{2} {3}:{4}'.format(datetime.now().day,
+                                                     datetime.now().month,
+                                                     datetime.now().year,
+                                                     datetime.now().hour,
+                                                     datetime.now().month),
+                                date_format)
+        for obj in objs:
+            set = datetime.strptime('{0}/{1}/{2} {3}:{4}'.format(obj.reg_date.day,
+                                                         obj.reg_date.month,
+                                                         obj.reg_date.year,
+                                                         obj.reg_date.hour,
+                                                         obj.reg_date.month),
+                                  date_format)
+
+            if (now - set).days - obj.life_span == 0:
+                obj.delete()
+        t.sleep(600)
+
+
+tChThr = threading.Thread(target=time_check, name='tchThr')
+tChThr.start()
 
 # Site domain name
-DOMAIN_NAME = 'http://77.47.198.74:8000/'
+DOMAIN_NAME = 'http://127.0.0.1:8000/'
 
 
 def redirect_view(request, short_url_key):
