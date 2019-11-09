@@ -93,7 +93,7 @@ def short_url_view(request):
 
 
 def main_view(request):
-    ranges = [i for i in range(1, 365)]
+    ranges = [i for i in range(1, 366)]
     context = {
         'ranges': ranges,
     }
